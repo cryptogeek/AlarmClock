@@ -49,12 +49,14 @@ namespace alarmClock
 
                 if (!File.Exists(alarmFile)) File.Create(alarmFile).Dispose();
 
+                string hoursAndSeconds = DateTime.Now.ToString("H'h'm"); //4h5
+                string dayAndMonth = DateTime.Now.ToString("d.M"); //17.2
+
                 StreamReader paramReader = new StreamReader(alarmFile);
                 string line;
                 while ((line = paramReader.ReadLine()) != null)
                 {
-                    string hoursAndSeconds = DateTime.Now.ToString("H'h'm"); //4h5
-                    string dayAndMonth = DateTime.Now.ToString("d.M"); //17.2
+                   
                     if (line.Contains(hoursAndSeconds) && line.Contains(dayAndMonth) && lastAlarm != hoursAndSeconds)
                     {
                         lastAlarm = hoursAndSeconds;
@@ -63,7 +65,12 @@ namespace alarmClock
                 }
                 paramReader.Close();
 
-                Thread.Sleep(5000);
+                label1.Invoke(new MethodInvoker(delegate
+                {
+                    label1.Text = dayAndMonth + " " + hoursAndSeconds;
+                }));
+
+                Thread.Sleep(1000);
             }
         }
 
@@ -71,6 +78,16 @@ namespace alarmClock
         {
             Task.Run(() => checkAlarms());
             this.Hide();
+        }
+
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
