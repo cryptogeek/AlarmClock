@@ -4,7 +4,7 @@ https://github.com/cryptogeek/AlarmClock/raw/master/source/alarmClock/bin/Releas
 # Description:
 AlarmClock is a simple program to display alerts in Windows.
 
-AlarmClock checks calendar.txt every second to see if a line contains the current time and if it finds one, it opens calendar.txt so the user can see it.
+AlarmClock checks calendar.txt every second to see if a line is equal to the current time and if it finds one, it opens calendar.txt so the user can see it.
 
 You can see it's active by looking on the bottom right of your screen in the notification area.
 
@@ -18,7 +18,8 @@ You can add lines like these:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-milk  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-cereals  
 	
-19.2 16h45 call client back
+19.2 16h45  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;call client back
 	
 # Syntax:
 {day}.{month} {hour}h{minutes}

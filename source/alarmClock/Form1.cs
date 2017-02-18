@@ -63,7 +63,7 @@ namespace alarmClock
                 while ((line = paramReader.ReadLine()) != null)
                 {
                    
-                    if (line.Contains(hoursAndSeconds) && line.Contains(dayAndMonth) && lastAlarm != hoursAndSeconds)
+                    if (line == dayAndMonth+" "+hoursAndSeconds && lastAlarm != hoursAndSeconds)
                     {
                         lastAlarm = hoursAndSeconds;
                         Process.Start("explorer.exe", alarmFile);
