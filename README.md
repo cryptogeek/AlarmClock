@@ -1,5 +1,5 @@
 # Download:
-https://github.com/cryptogeek/AlarmClock/raw/master/SecureBackup%20Portable.zip
+https://github.com/cryptogeek/AlarmClock/raw/master/source/alarmClock/bin/Release/AlarmClock.exe
 
 # Description:
 AlarmClock is a simple program to display alerts in Windows.
@@ -36,4 +36,4 @@ Windows Vista, 7, 8, 8.1, 10
 Windows server 2008, 2012, 2016
 
 # Changelog:
-https://raw.githubusercontent.com/cryptogeek/SecureBackup/master/changelog.txt
+https://raw.githubusercontent.com/cryptogeek/AlarmClock/master/changelog.txt
