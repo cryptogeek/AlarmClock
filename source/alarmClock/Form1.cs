@@ -36,6 +36,12 @@ namespace alarmClock
             }
         }
 
+        void alert()
+        {
+            Console.Beep();
+            MessageBox.Show("You have a task to do.", "AlarmClock");
+        }
+
         void checkAlarms()
         {
             string execDir = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
@@ -61,6 +67,7 @@ namespace alarmClock
                     {
                         lastAlarm = hoursAndSeconds;
                         Process.Start("explorer.exe", alarmFile);
+                        Task.Run(() => alert());
                     }
                 }
                 paramReader.Close();
