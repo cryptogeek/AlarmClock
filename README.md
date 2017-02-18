@@ -14,9 +14,9 @@ open AlarmClock.exe and then open the file "calendar.txt" in the same folder.
 You can add lines like these:
 
 19.2 13h0  
-	buy groceries:  
-	-milk  
-	-cereals  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;buy groceries:  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-milk  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-cereals  
 	
 19.2 16h45 call client back
 	
