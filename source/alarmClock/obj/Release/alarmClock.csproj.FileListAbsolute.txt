@@ -1,0 +1,17 @@
+c:\users\x\documents\visual studio 2015\Projects\alarmClock\alarmClock\bin\Release\alarmClock.exe.config
+c:\users\x\documents\visual studio 2015\Projects\alarmClock\alarmClock\bin\Release\alarmClock.exe
+c:\users\x\documents\visual studio 2015\Projects\alarmClock\alarmClock\bin\Release\alarmClock.pdb
+c:\users\x\documents\visual studio 2015\Projects\alarmClock\alarmClock\obj\Release\alarmClock.Form1.resources
+c:\users\x\documents\visual studio 2015\Projects\alarmClock\alarmClock\obj\Release\alarmClock.Properties.Resources.resources
+c:\users\x\documents\visual studio 2015\Projects\alarmClock\alarmClock\obj\Release\alarmClock.csproj.GenerateResource.Cache
+c:\users\x\documents\visual studio 2015\Projects\alarmClock\alarmClock\obj\Release\alarmClock.exe
+c:\users\x\documents\visual studio 2015\Projects\alarmClock\alarmClock\obj\Release\alarmClock.pdb
+E:\files\a\software\MySoftware\visual studio c#\projects\alarmClock\alarmClock\bin\Release\alarmClock.exe.config
+E:\files\a\software\MySoftware\visual studio c#\projects\alarmClock\alarmClock\obj\Release\alarmClock.exe
+E:\files\a\software\MySoftware\visual studio c#\projects\alarmClock\alarmClock\obj\Release\alarmClock.pdb
+E:\files\a\software\MySoftware\visual studio c#\projects\alarmClock\alarmClock\bin\Release\alarmClock.exe
+E:\files\a\software\MySoftware\visual studio c#\projects\alarmClock\alarmClock\bin\Release\alarmClock.pdb
+E:\files\a\software\MySoftware\visual studio c#\projects\alarmClock\alarmClock\obj\Release\alarmClock.csprojResolveAssemblyReference.cache
+E:\files\a\software\MySoftware\visual studio c#\projects\alarmClock\alarmClock\obj\Release\alarmClock.Form1.resources
+E:\files\a\software\MySoftware\visual studio c#\projects\alarmClock\alarmClock\obj\Release\alarmClock.Properties.Resources.resources
+E:\files\a\software\MySoftware\visual studio c#\projects\alarmClock\alarmClock\obj\Release\alarmClock.csproj.GenerateResource.Cache
