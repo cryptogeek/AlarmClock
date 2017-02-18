@@ -72,17 +72,13 @@ namespace alarmClock
                 }
                 paramReader.Close();
 
-                label1.Invoke(new MethodInvoker(delegate
-                {
-                    label1.Text = dayAndMonth + " " + hoursAndSeconds;
-                }));
-
                 Thread.Sleep(1000);
             }
         }
 
         private void Form1_Shown(object sender, EventArgs e)
         {
+            timer1.Start();
             Task.Run(() => checkAlarms());
             this.Hide();
         }
@@ -95,6 +91,13 @@ namespace alarmClock
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            string hoursAndSeconds = DateTime.Now.ToString("H'h'm"); //4h5
+            string dayAndMonth = DateTime.Now.ToString("d.M"); //17.2
+            label1.Text = dayAndMonth + " " + hoursAndSeconds;
         }
     }
 }
