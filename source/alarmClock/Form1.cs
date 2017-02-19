@@ -42,44 +42,9 @@ namespace alarmClock
             MessageBox.Show("You have a task to do.", "AlarmClock");
         }
 
-        void checkAlarms()
-        {
-            string execDir = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
-
-            string alarmFile = execDir + @"\calendar.txt";
-
-            string lastAlarm = "";
-
-            while (true)
-            {
-
-                if (!File.Exists(alarmFile)) File.Create(alarmFile).Dispose();
-
-                string hoursAndSeconds = DateTime.Now.ToString("H'h'm"); //4h5
-                string dayAndMonth = DateTime.Now.ToString("d.M"); //17.2
-
-                StreamReader paramReader = new StreamReader(alarmFile);
-                string line;
-                while ((line = paramReader.ReadLine()) != null)
-                {
-                   
-                    if (line == dayAndMonth+" "+hoursAndSeconds && lastAlarm != hoursAndSeconds)
-                    {
-                        lastAlarm = hoursAndSeconds;
-                        Process.Start("explorer.exe", alarmFile);
-                        Task.Run(() => alert());
-                    }
-                }
-                paramReader.Close();
-
-                Thread.Sleep(1000);
-            }
-        }
-
         private void Form1_Shown(object sender, EventArgs e)
         {
             timer1.Start();
-            Task.Run(() => checkAlarms());
             this.Hide();
         }
 
@@ -93,10 +58,32 @@ namespace alarmClock
             this.Close();
         }
 
+        string lastAlarm = "";
         private void timer1_Tick(object sender, EventArgs e)
         {
+            string execDir = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+
+            string alarmFile = execDir + @"\calendar.txt";
+
+            if (!File.Exists(alarmFile)) File.Create(alarmFile).Dispose();
+
             string hoursAndSeconds = DateTime.Now.ToString("H'h'm"); //4h5
             string dayAndMonth = DateTime.Now.ToString("d.M"); //17.2
+
+            StreamReader paramReader = new StreamReader(alarmFile);
+            string line;
+            while ((line = paramReader.ReadLine()) != null)
+            {
+
+                if (line == dayAndMonth + " " + hoursAndSeconds && lastAlarm != dayAndMonth + hoursAndSeconds)
+                {
+                    lastAlarm = dayAndMonth + hoursAndSeconds;
+                    Process.Start("explorer.exe", alarmFile);
+                    Task.Run(() => alert());
+                }
+            }
+            paramReader.Close();
+
             label1.Text = dayAndMonth + " " + hoursAndSeconds;
         }
     }

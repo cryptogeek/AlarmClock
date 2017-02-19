@@ -15,3 +15,12 @@ E:\files\a\software\MySoftware\visual studio c#\projects\alarmClock\alarmClock\o
 E:\files\a\software\MySoftware\visual studio c#\projects\alarmClock\alarmClock\obj\Release\alarmClock.Form1.resources
 E:\files\a\software\MySoftware\visual studio c#\projects\alarmClock\alarmClock\obj\Release\alarmClock.Properties.Resources.resources
 E:\files\a\software\MySoftware\visual studio c#\projects\alarmClock\alarmClock\obj\Release\alarmClock.csproj.GenerateResource.Cache
+E:\files\a\software\MySoftware\visual studio c#\projects\alarmClock\source\alarmClock\bin\Release\alarmClock.exe.config
+E:\files\a\software\MySoftware\visual studio c#\projects\alarmClock\source\alarmClock\bin\Release\alarmClock.exe
+E:\files\a\software\MySoftware\visual studio c#\projects\alarmClock\source\alarmClock\bin\Release\alarmClock.pdb
+E:\files\a\software\MySoftware\visual studio c#\projects\alarmClock\source\alarmClock\obj\Release\alarmClock.csprojResolveAssemblyReference.cache
+E:\files\a\software\MySoftware\visual studio c#\projects\alarmClock\source\alarmClock\obj\Release\alarmClock.Form1.resources
+E:\files\a\software\MySoftware\visual studio c#\projects\alarmClock\source\alarmClock\obj\Release\alarmClock.Properties.Resources.resources
+E:\files\a\software\MySoftware\visual studio c#\projects\alarmClock\source\alarmClock\obj\Release\alarmClock.csproj.GenerateResource.Cache
+E:\files\a\software\MySoftware\visual studio c#\projects\alarmClock\source\alarmClock\obj\Release\alarmClock.exe
+E:\files\a\software\MySoftware\visual studio c#\projects\alarmClock\source\alarmClock\obj\Release\alarmClock.pdb
